@@ -9,7 +9,6 @@ int main() {
     printf("Digite a quantidade de derrotas:");
     scanf("%d",&derrotas);
     vitorias = vitorias * 3;
-    empates = empates * 1;
     total = empates + vitorias;
     printf("=========================\n");
     printf("A quantidade total de pontos foi de %d \n",total);
