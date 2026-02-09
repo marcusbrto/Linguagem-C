@@ -13,6 +13,7 @@ int main() {
 
     printf("=======================================");
     printf("\n");
+
     printf("Nome: %s \n", nome);
     printf("Idade: %d \n", idade);
     printf("Quantidade de gols: %d \n", quantidade);
