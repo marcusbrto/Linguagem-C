@@ -5,7 +5,7 @@ int main() {
     scanf("%d", &gols);
     if (gols > 10) {
         printf("Excelente temporada!");
-    }else if (gols < 10 && gols >= 5) {
+    }else if (gols >= 5) {
         printf("Boa temporada!");
     }else {
         printf("Temporada abaixo do esperado.");
