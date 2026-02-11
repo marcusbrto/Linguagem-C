@@ -14,24 +14,24 @@ int main(){
 
 	switch(operador)
 	{
-		case '+':
-			printf("%.2f %c %.2f = %.2f",a,operador,b,(a + b));
-			break;
-		case '-':
+	case '+':
+		printf("%.2f %c %.2f = %.2f",a,operador,b,(a + b));
+		break;
+	case '-':
 		printf("%.2f %c %.2f = %.2f",a,operador,b,(a - b));
 		break;
-		case '*':
+	case '*':
 		printf("%.2f %c %.2f = %.2f",a,operador,b,(a * b));
 		break;
 	case '/':
-		if(b == 0 && a == 0)
+		if(b == 0)
 		{
 			printf("Nao pode dividir por zero!");
 		}
 		else
 			printf("%.2f %c %.2f = %.2f",a,operador,b,(a / b));
 		break;
-	}
-	defaut:
+	default:
 		printf("Operador invalido!");
+	}
 }
