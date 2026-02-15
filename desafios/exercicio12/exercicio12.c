@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int opcao;
     float nota1,nota2,media,frequencia;
-
+    printf("========================");
+    printf("\nMenu:");
     printf("\n1. Verificar se o aluno foi aprovado.");
     printf("\n2. Sair.");
+    printf("\n========================");
     printf("\nEscolha uma opcao: ");
     scanf("%d", &opcao);
     switch (opcao){
     case 1:
-        printf("\n Digite a primeira nota:");
+        printf("\n Digite a primeira nota: ");
         scanf("%f", &nota1);
-        printf("\n Digite a segunda nota:");
+        printf("\n Digite a segunda nota: ");
         scanf("%f", &nota2);
         printf("\n Qual a frenquencia em %%: ");
         scanf("%f", &frequencia);
