@@ -2,17 +2,15 @@
 
 int main()
 {
-    int numero, cont;
+    int numero;
     printf("Digite um numero: ");
     scanf("%d", &numero);
     for(int i=1; i<=numero; i++)
     {
-        printf("%d\n ", i);
-        if (i<numero){
-            for(int j=1; j<=i; j++)
+        for (int j=1; j<=i; j++)
         {
             printf("%d", j);
         }
-        }
+        printf("\n");
     }
 }
