@@ -1,22 +1,27 @@
 #include <stdio.h>
 
-int main()
-{
-    switch(opcao){
-        case 1:
-        printf("Opcao 1\n");
+int main() {
+    int opcao;
+
+    printf("Escolha uma opcao:\n");
+    printf("1. Verificar saldo\n");
+    printf("2. Fazer deposito\n");
+    printf("3. Fazer saque\n");
+    printf("Digite a opcao: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+    case 1:
+        printf("Saldo atual: R$ 1.000,00\n");
         break;
-        case 2:
-        printf("Opcao 2\n");
+    case 2:
+        printf("Deposito realizado com sucesso\n");
         break;
-        case 3:
-        printf("Opcao 3\n");
+    case 3:
+        printf("Saque realizado com sucesso\n");
         break;
-        case 4:
-        printf("Opcao 4\n");
-        break;
-        default:
-        printf("Opcao INVALIDA\n");
+    default:
+        printf("Opcao invalida\n");
     }
 
     return 0;
