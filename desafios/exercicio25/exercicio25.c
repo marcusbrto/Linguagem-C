@@ -15,4 +15,6 @@ int main()
     scanf("%f",&numero2);
 
     printf("A media foi: %.2f",media(numero1,numero2));
+
+    return 0;
 }
