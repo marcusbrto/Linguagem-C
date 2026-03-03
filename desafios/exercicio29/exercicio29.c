@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-int quadrado(char n)
+void quadrado(int num, char ctr)
 {
-    for (int i=1; i<=4; i++)
+    for (int i=0; i < num; i++)//linhas
     {
-        printf("%c", n);
-        for (int j=1; j<=7; j++)
+        for (int j=0; j < num; j++)//colunas
         {
-            printf("%c", n);
+            printf("%c ", ctr);
         }
         printf("\n");
     }
@@ -15,9 +14,14 @@ int quadrado(char n)
 
 int main()
 {
+    int n;
     char caracter;
-    printf("Digite um caractere(*, #, $ ...): ");
-    scanf("%c", &caracter);
 
-    quadrado(caracter);
+    printf("Digite o tamanho do quadrado: ");
+    scanf("%d", &n);
+
+    printf("Digite um caractere(*, #, $ ...): ");
+    scanf(" %c", &caracter);
+
+    quadrado(n,caracter);
 }
