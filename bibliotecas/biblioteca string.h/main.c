@@ -1,5 +1,5 @@
 /* <string.h> - manipulação de strings
- *
+*
  * strlen() - tamanho da string
  * strcpy() - copia uma string
  * strcmp() - compara strings
