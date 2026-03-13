@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+
+    int matriz[3][3] = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+
+    printf("O elemento na posicao [0][0] eh %d\n", matriz[0][0]);
+    printf("O elemento na posicao [1][1] eh %d\n", matriz[1][1]);
+    printf("O elemento na posicao [2][2] eh %d\n", matriz[2][2]);
+
+    return 0;
+}
