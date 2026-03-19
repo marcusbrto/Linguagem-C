@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char nomes[5][50];
+    char letra;
+
+    // Entrada da letra a ser buscada
+    printf("Digite a letra que deseja buscar: ");
+    scanf(" %c", &letra);
+
+    //Entrada dos 5 nomes
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Digite o nome %d: ", i + 1);
+        scanf("%s", nomes[i]);
+    }
+
+    //Verifica e imprime nomes que contem a letra
+    printf("\nNomes que tem contem %c:\n ",letra);
+        for (int i = 0; i < 5; i++){
+        if (strchr(nomes[i],letra) != NULL)
+        {
+            printf("%s\n", nomes[i]);
+        }
+    }
+
+    return 0;
+}
