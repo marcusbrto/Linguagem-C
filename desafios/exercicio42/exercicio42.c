@@ -2,10 +2,19 @@
 
 int main()
 {
-    int numero = 1;
-    for (int i = 15; i >= 5; i--)
+    int matriz[4][4], soma = 0;
+
+    for (int i = 0; i < 4; i++)
     {
-        printf("%d\n", numero);
-        numero++;
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Digite a matriz[%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+            if (i == j)
+            {
+                soma += matriz[i][j];
+            }
+        }
     }
+    printf("A soma da diagonal principal eh: %d", soma);
 }
