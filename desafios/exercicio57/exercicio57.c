@@ -10,10 +10,54 @@ void push(int valor){
         return;
     }
     topo++;
-    pilha[topo];
+    pilha[topo] = valor;
+}
+
+int top()
+{
+    if (topo == -1)
+    {
+        printf("Erro: pilha vazia\n");
+        return -1;
+    }
+    return pilha[topo];
+}
+
+void pop(){
+    if (topo == -1)
+    {
+        printf("Erro: pilha vazia\n");
+        return;
+    }
+    topo--;
+}
+
+void imprimirPilha(){
+    if(topo == -1){
+        printf("Pilha vazia!\n");
+        return;
+    }
+    printf("Elementos da pilha: \n");
+    for (int i = topo; i >= 0;i--){
+        printf("%d\n", pilha[i]);
+    }
 }
 
 int main(){
 
+    push(10);
+    push(67);
+    push(999999);
+
+    imprimirPilha();
+    
+    printf("Topo atual: %d\n", top());
+    
+    pop();
+    
+    printf("Topo atual: %d\n", top());
+    
+    imprimirPilha();
+    
     return 0;
 }
